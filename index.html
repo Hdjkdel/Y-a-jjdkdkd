@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="tr"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Uygulama</title> 
+  <style>
+        /* Sayfa boyutlarını tam ekran yapmak için gerekli stil */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style> 
+ </head> 
+ <body> <iframe src="https://hdjkdel.github.io/Ana-sayfa-/" id="appFrame"></iframe> 
+  <script>
+        // Sayfa yüklendikten sonra tam ekran yapmaya çalışalım
+        document.documentElement.requestFullscreen = document.documentElement.requestFullscreen || 
+            document.documentElement.mozRequestFullScreen || 
+            document.documentElement.webkitRequestFullscreen || 
+            document.documentElement.msRequestFullscreen;
+
+        document.documentElement.requestFullscreen();
+    </script> 
+ </body>
+</html>
